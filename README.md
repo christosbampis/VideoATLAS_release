@@ -61,7 +61,6 @@ Note that for testing this model the same quality model has to be used. For exam
 It is possible to create your own models by re-training on the LIVE-Netflix Video QoE Database using the “GeneratePreTrainedModels.py” script. You only have to compute the frame quality scores and perform some pooling on those quality scores.
 You can also find the pre-computed frame quality scores for several models (SSIM, PSNR, MS-SSIM, NIQE, VMAF, STRRED) in the LIVE_NFLX_PublicData_VideoATLAS_Release folder, indicated by [quality_model]_vec (one for each of the 112 videos in the dataset). See the following description for more details on the files that are available in this release.
 Please note that when testing on the LIVE-Netflix Video QoE Database, the results will be much higher since the pretrained models are trained on the whole dataset. Therefore, if you want to train/test on a subset of the data, you should use the train/test splits using the pre-generated train/test indices.
-=================================================================
 
 Details about the files in this release:
 
