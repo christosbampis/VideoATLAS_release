@@ -1,18 +1,31 @@
 Video Assessment of TemporaL Artifacts and Stalls (Video ATLAS) Software release.
 =================================================================
+
 -----------COPYRIGHT NOTICE STARTS WITH THIS LINE------------
+
 Copyright (c) 2017 The University of Texas at Austin
+
 All rights reserved.
+
 Permission is hereby granted, without written agreement and without license or royalty fees, to use, copy, modify, and distribute this code (the source files) and its documentation for any purpose, provided that the copyright notice in its entirety appear in all copies of this code, and the original source of this code, Laboratory for Image and Video Engineering (LIVE, http://live.ece.utexas.edu) and Center for Perceptual Systems (CPS, http://www.cps.utexas.edu) at the University of Texas at Austin (UT Austin, http://www.utexas.edu), is acknowledged in any publication that reports research using this code. The research is to be cited in the bibliography as:
+
 1)  C. G. Bampis and A. C. Bovik, "Video ATLAS Software Release" 
+
 URL: http://live.ece.utexas.edu/research/quality/VideoATLAS_release.zip, 2017
+
 2)  C. G. Bampis and A. C. Bovik, "Learning to Predict Streaming Video QoE: Distortions, Rebuffering and Memory," Transactions on Image Processing, revised
+
 IN NO EVENT SHALL THE UNIVERSITY OF TEXAS AT AUSTIN BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF THE UNIVERSITY OF TEXAS AT AUSTIN HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE UNIVERSITY OF TEXAS AT AUSTIN SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER IS ON AN "AS IS" BASIS, AND THE UNIVERSITY OF TEXAS AT AUSTIN HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+
 -----------COPYRIGHT NOTICE ENDS WITH THIS LINE------------%
+
 Author  : Christos Bampis
+
 Version : 3.0
+
 The authors are with the Laboratory for Image and Video Engineering (LIVE), Department of Electrical and Computer Engineering, The University of Texas at Austin, Austin, TX.
 Kindly report any suggestions or corrections to cbampis@gmail.com
+
 =================================================================
 Please note that the proposed Video ATLAS model uses the following (as described in the paper):
 ⇒	all 5 features: VQA, R1, R2, M and I
@@ -35,6 +48,7 @@ It is possible to create your own models by re-training on the LIVE-Netflix Vide
 You can also find the pre-computed frame quality scores for several models (SSIM, PSNR, MS-SSIM, NIQE, VMAF, STRRED) in the LIVE_NFLX_PublicData_VideoATLAS_Release folder, indicated by [quality_model]_vec (one for each of the 112 videos in the dataset). See the following description for more details on the files that are available in this release.
 Please note that when testing on the LIVE-Netflix Video QoE Database, the results will be much higher since the pretrained models are trained on the whole dataset. Therefore, if you want to train/test on a subset of the data, you should use the train/test splits using the pre-generated train/test indices.
 =================================================================
+
 Details about the files in this release:
 1.	“PretrainedModels” folder: contains ready-to-go models for QoE prediction using Video ATLAS, trained on the LIVE-Netflix Video QoE Database. You need Python to load the pickle files and test the model. Please make sure you load the regressor by doing: regressor.best_estimator_.predict(your_test_data)
 2.	“TrainingMatrix_LIVENetflix_1000_trials.mat”: contains 1000 pre-generated random 80% train and 20% test content splits. A value of 1 in the (i,j ) element of the matrix indicatess that the ith video sequence is train on the jth trial (i=1…112, j=1…1000).
