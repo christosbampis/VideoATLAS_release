@@ -9,11 +9,9 @@ All rights reserved.
 
 Permission is hereby granted, without written agreement and without license or royalty fees, to use, copy, modify, and distribute this code (the source files) and its documentation for any purpose, provided that the copyright notice in its entirety appear in all copies of this code, and the original source of this code, Laboratory for Image and Video Engineering (LIVE, http://live.ece.utexas.edu) and Center for Perceptual Systems (CPS, http://www.cps.utexas.edu) at the University of Texas at Austin (UT Austin, http://www.utexas.edu), is acknowledged in any publication that reports research using this code. The research is to be cited in the bibliography as:
 
-1)  C. G. Bampis and A. C. Bovik, "Video ATLAS Software Release" 
+1) C. G. Bampis and A. C. Bovik, "Feature-based Prediction of Streaming Video QoE: Distortions, Stalling and Memory", Signal Processing: Image Communication, to appear
 
-URL: http://live.ece.utexas.edu/research/quality/VideoATLAS_release.zip, 2017
-
-2)  C. G. Bampis and A. C. Bovik, "Learning to Predict Streaming Video QoE: Distortions, Rebuffering and Memory," Signal Processing: Image Communication, under review
+2)  C. G. Bampis and A. C. Bovik, "Video ATLAS Software Release", URL: http://live.ece.utexas.edu/research/quality/VideoATLAS_release.zip, 2017
 
 Please note that an arXiv version of the paper is available at: https://arxiv.org/pdf/1703.00633.pdf
 
